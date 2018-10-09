@@ -1,10 +1,14 @@
 #!/bin/bash
+book_window_id=37748737
+terminal_window_id=48234502
 
-xdotool windowactivate --sync 37748746 key alt+d
+xdotool windowactivate --sync $book_window_id key alt+d
 
-for n2 in {1..10} 
+for n2 in {1..11} 
 do
-	 xdotool windowactivate --sync 37748746 key shift+Tab
+	 xdotool windowactivate --sync $book_window_id key shift+Tab
 done	
 
-xdotool windowactivate --sync 37748746 key Return
+xdotool windowactivate --sync $book_window_id key Return
+xdotool windowactivate --sync $terminal_window_id
+
